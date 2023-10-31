@@ -1,7 +1,7 @@
 {
-  "name": "chrome-extension-boilerplate-react",
-  "version": "5.0.4",
-  "description": "A chrome extension boilerplate built with React 18, Webpack 5, and Webpack Dev Server 4",
+  "name": "thailand-gold-price",
+  "version": "1.0.3",
+  "description": "ราคาทองวันนี้ตามประกาศสมาคมค้าทองคำ ทองแท่ง ทองรูปพรรณ",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
     "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,json,css,scss,md}'"
   },
   "dependencies": {
+    "numeral": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

@@ -1,45 +1,57 @@
-.App {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  text-align: center;
-  height: 100%;
-  padding: 10px;
-  background-color: #282c34;
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 280px;
+  background-color: #fafad2;
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 30vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  height: 100%;
+.loading-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.loading-content p {
+  margin: 0 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table.data-table {
+  width: 320px;
+  height: 280px;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.data-table td,
+table.data-table th {
+  border: 1px solid #d4af37;
+  padding: 10px 2px;
+}
+table.data-table tbody td {
+  font-size: 16px;
+  color: #8b4513;
+}
+table.data-table thead {
+  background: #ffd700;
+  background: -moz-linear-gradient(top, #ffe140 0%, #ffdb19 66%, #ffd700 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #ffe140 0%,
+    #ffdb19 66%,
+    #ffd700 100%
+  );
+  background: linear-gradient(to bottom, #ffe140 0%, #ffdb19 66%, #ffd700 100%);
+}
+table.data-table thead th {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+}
+
+td.title {
+  font-weight: bold;
 }
